@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <div id="scanBox" class="scanBox">
+        <button id="scanBtn">
+            开始扫描
+        </button>
+        <div id="scanHtml"></div>
+    </div>
+    <div style="display: none" id="scanCtn" class="scanBox">
+        <div class="qrscanner">
+            <div id="backBtn" class="backBtn">
+                <span class="iconfont icon-back"></span>
+            </div>
+            <div class="qrscanner-area">
+            </div>
+            <div class="through-line"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="path/to/qrscanner/library.bundle.min.js"></script>
+</body>
+
+</html>
